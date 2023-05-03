@@ -1,12 +1,12 @@
 <?php
     return array(
-        'host' => "172.16.238.10",
-        'user' => "root",
-        'pass' => "",
-        'db' => "l4d2",
+        'host' => "DATABASE_HOST",
+        'user' => "DATABASE_USER",
+        'pass' => "DATABASE_PASS",
+        'db' => "DATABASE_NAME",
         'charset' => "utf8",
-        'project' => "Cyber",
-        'perPage' => 20,
-        'steamApiKey' => 'B57AB754F1BEEE5251BF4FF18ED8D1D5'
+        'project' => "PROJECT_NAME",
+        'perPage' => 10,
+        'steamApiKey' => 'ENTER_STEAM_API_KEY'
     );
 ?>
