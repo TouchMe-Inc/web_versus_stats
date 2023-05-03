@@ -1,0 +1,13 @@
+[May 1, 2023, 8:46 pm UTC +0000] SQLSTATE[HY000] [1045] Access denied for user 'root'@'172.16.238.10' (using password: YES)
+[May 1, 2023, 8:46 pm UTC +0000] SQLSTATE[HY000] [1045] Access denied for user 'root'@'172.16.238.10' (using password: YES)
+[May 1, 2023, 8:46 pm UTC +0000] SQLSTATE[HY000] [1045] Access denied for user 'root'@'172.16.238.10' (using password: YES)
+[May 1, 2023, 8:46 pm UTC +0000] SQLSTATE[HY000] [1045] Access denied for user 'root'@'172.16.238.10' (using password: YES)
+[May 1, 2023, 8:50 pm UTC +0000] SQLSTATE[HY000] [1045] Access denied for user 'u132785_admin'@'172.16.238.10' (using password: YES)
+[May 1, 2023, 8:53 pm UTC +0000] SQLSTATE[HY000] [2002] Connection refused
+[May 1, 2023, 8:54 pm UTC +0000] SQLSTATE[HY000] [2002] No such file or directory
+[May 1, 2023, 8:54 pm UTC +0000] SQLSTATE[HY000] [2002] No such file or directory
+[May 1, 2023, 8:54 pm UTC +0000] SQLSTATE[HY000] [2002] No such file or directory
+[May 1, 2023, 8:55 pm UTC +0000] SQLSTATE[HY000] [2002] No such file or directory
+[May 1, 2023, 8:57 pm UTC +0000] SQLSTATE[HY000] [2002] No such file or directory
+[May 1, 2023, 8:57 pm UTC +0000] SQLSTATE[HY000] [2002] No such file or directory
+[May 1, 2023, 8:59 pm UTC +0000] No response to address https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=&steamids=76561198034037342,76561198099966860,76561198079257725,76561198028671301,76561199015002189,76561198964484494,76561198927604797,76561199093589058,76561198858439201,76561198808752930
