@@ -1,0 +1,5 @@
+<IfModule dir_module>
+    DirectoryIndex public/index.php
+</IfModule>
+AddDefaultCharset UTF-8
+Header set X-Content-Type-Options nosniff
