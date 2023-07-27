@@ -2,7 +2,14 @@
 PHP script demonstrating statistics [versus_stats](https://github.com/TouchMe-Inc/l4d2_versus_stats).
 
 ## Install
-Todo
+1. Place the contents of the `src` directory in the root of your site.
+2. Run `composer install` and `npm install`.
+3. Set up environment variables in `.env` file.
+4. Execute command `php artisan migrate`.
+5. Execute command `php artisan storage:link`.
+6. Execute command `npm run build`.
+7. Please make sure your web server directs all requests to your application's `public/index.php` file.
+8. Optimize the application following the [documentation](https://laravel.com/docs/10.x/deployment).
 
 ## Preview
 ### Light mode
