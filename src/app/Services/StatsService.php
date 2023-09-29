@@ -38,7 +38,7 @@ class StatsService
 
         $data = [];
 
-        if (isset($response['players'])) {
+        if ($this->isValidPlayerDataResponse($response)) {
             foreach ($response['players'] as $player) {
                 $data[$player['steamid']] = $player;
             }
@@ -69,6 +69,6 @@ class StatsService
 
     private function isValidPlayerDataResponse(array $response): bool
     {
-        return isset($response['response']);
+        return isset($response['players']);
     }
 }

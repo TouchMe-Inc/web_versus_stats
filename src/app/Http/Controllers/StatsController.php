@@ -20,7 +20,7 @@ class StatsController extends Controller
      */
     public function index(): View
     {
-        return view('pages.index', [
+        return view('pages.stats.index', [
             'players' => $this->statsService->paginated(),
         ]);
     }
@@ -32,7 +32,7 @@ class StatsController extends Controller
     {
         // SELECT (SELECT count(1) FROM vs_players b WHERE b.`rating`>a.`rating`)+1 as rank FROM vs_players a WHERE `id`=%d LIMIT 1;
 
-        return view('pages.show', [
+        return view('pages.stats.show', [
             'player' => $this->statsService->addPlayerData($player),
         ]);
     }
