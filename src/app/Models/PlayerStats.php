@@ -13,7 +13,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $played_time
  * @property int $last_visit
  */
-class Player extends Model
+class PlayerStats extends Model
 {
     use HasFactory;
 

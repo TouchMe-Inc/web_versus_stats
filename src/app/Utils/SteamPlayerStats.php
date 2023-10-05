@@ -1,12 +1,15 @@
 <?php
 
-namespace App\Services;
+namespace App\Utils;
 
-use App\Models\Player;
+use App\Models\PlayerStats;
+use App\Services\PlayerStatsService;
+use App\Services\SteamApiService;
 
-class StatsService
+class SteamPlayerStats
 {
     private SteamApiService $steamApiService;
+    private PlayerStatsService $playerStatsService;
 
     private array $fields = [
         'communityvisibilitystate',
@@ -20,14 +23,12 @@ class StatsService
     public function __construct()
     {
         $this->steamApiService = new SteamApiService();
+        $this->playerStatsService = new PlayerStatsService();
     }
 
-    public function paginated()
+    public function paginated(): mixed
     {
-        $players = Player::select(['id', 'rating', 'steam_id', 'last_name', 'played_time'])
-            ->where('rating', '>', 0.0)
-            ->orderBy('rating', 'desc')
-            ->paginate(config('stats.pagination.perPage'));
+        $players = $this->playerStatsService->paginated();
 
         $playersSteamId = [];
         foreach ($players as $player) {
@@ -51,14 +52,14 @@ class StatsService
         return $players;
     }
 
-    public function addPlayerData(Player $player): Player
+    public function addPlayerData(PlayerStats $player): PlayerStats
     {
         $response = $this->steamApiService->getPlayerDataBySteamIds($player->steam_id);
 
         return $this->bindPlayerData($player, $response['players'][0] ?? []);
     }
 
-    public function bindPlayerData(Player $player, array $data): Player
+    public function bindPlayerData(PlayerStats $player, array $data): PlayerStats
     {
         foreach ($this->fields as $field) {
             $player->setAttribute($field, $data[$field] ?? null);
