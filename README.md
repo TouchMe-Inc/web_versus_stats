@@ -14,12 +14,14 @@ PHP script demonstrating statistics [versus_stats](https://github.com/TouchMe-In
 ## Preview
 ### Light mode
 Main page:
-![image](https://github.com/TouchMe-Inc/web_versus_stats/assets/89782512/89f190b6-7c3e-4278-b266-3a12110746f3)
+![image](https://github.com/TouchMe-Inc/web_versus_stats/assets/89782512/ae3030f7-8313-464a-95e4-c0e444a0da9b)
+
 Player page:
-![image](https://github.com/TouchMe-Inc/web_versus_stats/assets/89782512/aa3859d5-fc88-4f40-9fe2-aa9cf0eb5579)
+![image](https://github.com/TouchMe-Inc/web_versus_stats/assets/89782512/6fedfa24-1f95-443d-9891-0c4705a5ccd3)
 
 ### Dark mode
 Main page:
-![image](https://github.com/TouchMe-Inc/web_versus_stats/assets/89782512/7ef3267a-cb3a-47c1-9efd-c87d0e9e04c9)
+![image](https://github.com/TouchMe-Inc/web_versus_stats/assets/89782512/fa9aa441-d3e4-494b-b318-1c10ac2682ae)
+
 Player page:
-![image](https://github.com/TouchMe-Inc/web_versus_stats/assets/89782512/eb2f3916-57e2-4f4a-9fda-21d8967fcd99)
+![image](https://github.com/TouchMe-Inc/web_versus_stats/assets/89782512/6bfa770e-893c-4088-b0a3-902be6b8cd4e)

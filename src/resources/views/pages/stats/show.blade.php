@@ -18,8 +18,8 @@
     <x-slot:title>
         {{$player['personaname'] ?? $player->last_name}}
     </x-slot:title>
-    <section class="bg-white dark:bg-slate-900">
-        <div class="mx-auto max-w-screen-xl py-8 sm:py-12 sm:px-6 px-4">
+    <section class="px-4 2xl:px-0">
+        <div class="mx-auto max-w-screen-xl py-8 sm:py-12">
             <div class="flex">
                 <div class="flex-none w-auto max-w-full pr-3">
                     <div
@@ -43,14 +43,14 @@
             </div>
         </div>
     </section>
-    <section class="bg-slate-100 dark:bg-slate-950 dark:bg-opacity-70">
-        <div class="mx-auto max-w-screen-xl py-8 sm:py-12 sm:px-6 px-4">
+    <section class="bg-slate-100 dark:bg-[#1e2433] py-[65px] md:py-[105px] px-4 2xl:px-0">
+        <div class="mx-auto max-w-screen-xl">
             <div
-                class="grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 sm:mb-6 mb-4"
+                class="grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
             >
                 @foreach($stats as $stat)
                     <div
-                        class="flex flex-col bg-white dark:bg-slate-900 rounded-lg border border-slate-200 dark:border-slate-800">
+                        class="flex flex-col bg-white dark:bg-[#2A3246] rounded-lg border border-slate-200 dark:border-transparent">
                         <div class="flex flex-wrap p-4">
                             <div class="w-full max-w-full flex-grow flex-1">
                                 <h5 class="text-slate-700 dark:text-slate-400 uppercase font-bold text-xs">
@@ -73,7 +73,8 @@
                     </div>
                 @endforeach
             </div>
-            <div class="block p-6 bg-white dark:bg-slate-900 rounded-lg border border-slate-200 dark:border-slate-800 sm:mb-6 mb-4">
+            <div
+                class="block p-6 bg-white dark:bg-[#2A3246] rounded-lg border border-slate-200 dark:border-transparent sm:mt-6 mt-4">
                 <dl class="grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
                     @for($code = VersusStats::S_K_SMG->value; $code <= VersusStats::S_K_GL->value; $code++)
                         <div class="flex flex-col justify-center">
@@ -83,7 +84,8 @@
                     @endfor
                 </dl>
             </div>
-            <div class="block p-6 bg-white dark:bg-slate-900 rounded-lg border border-slate-200 dark:border-slate-800">
+            <div
+                class="block p-6 bg-white dark:bg-[#2A3246] rounded-lg border border-slate-200 dark:border-transparent sm:mt-6 mt-4">
                 <dl class="grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
                     @for($code = VersusStats::S_K_KATANA->value; $code <= VersusStats::S_K_CROWBAR->value; $code++)
                         <div class="flex flex-col justify-center">

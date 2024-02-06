@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\StatsController;
+use App\Http\Controllers\PlayerStatsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [StatsController::class, 'index'])->name('stats.index');
-Route::get('/players/{player}', [StatsController::class, 'show'])->name('stats.show');
+Route::get('/', [PlayerStatsController::class, 'index'])->name('stats.index');
+Route::get('/players/{player}', [PlayerStatsController::class, 'show'])->name('stats.show');
